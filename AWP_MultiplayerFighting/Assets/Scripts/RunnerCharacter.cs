@@ -20,5 +20,9 @@ public class RunnerCharacter : MonoBehaviour
         float speed = Time.time;
         Vector3 movement = new Vector3 (1, 0, 0);
         transform.Translate(movement * speed * Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.Space)){
+            Debug.Log(speed);
+        }
     }
 }
