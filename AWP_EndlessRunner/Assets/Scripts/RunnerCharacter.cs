@@ -5,6 +5,7 @@ using UnityEngine;
 public class RunnerCharacter : MonoBehaviour
 {
 
+    public GameObject runner;
     float speed;
 
     // Start is called before the first frame update
@@ -24,4 +25,13 @@ public class RunnerCharacter : MonoBehaviour
             Debug.Log(speed);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Death Void")
+        {
+            Destroy(runner);
+        }
+    }
+
 }
