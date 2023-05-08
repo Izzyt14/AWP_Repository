@@ -11,13 +11,13 @@ public class OutputHole : MonoBehaviour
     public GameObject redBox;
     public GameObject greenBox;
     public GameObject pinkBox;
-    public bool isActivated2;
+    //public bool isActivated2;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        isActivated2 = false;
+        //isActivated2 = false;
         redBox = GameObject.Find("Red Box");
         greenBox = GameObject.Find("Green Box");
         pinkBox = GameObject.Find("Pink Box");
@@ -63,27 +63,28 @@ public class OutputHole : MonoBehaviour
     }
     
     private void Update() {
-        if (isActivated2 == true){
-         if (Input.GetKey(KeyCode.A))
+        //if (isActivated2 == true)
+                                    {
+         if (Input.GetKey(KeyCode.LeftArrow))
              rb.AddForce(Vector3.left);
-         if (Input.GetKey(KeyCode.D))
+         if (Input.GetKey(KeyCode.RightArrow))
              rb.AddForce(Vector3.right);
-         if (Input.GetKey(KeyCode.W))
+         if (Input.GetKey(KeyCode.UpArrow))
              rb.AddForce(Vector3.up);
-         if (Input.GetKey(KeyCode.S))
+         if (Input.GetKey(KeyCode.DownArrow))
              rb.AddForce(Vector3.down);
         }
  
         currentPosition = outputHole.transform.position;
     
-        if (Input.GetKey(KeyCode.Space)){
-            if (isActivated2 == false){
-            isActivated2 = true;
-        } else {
-            isActivated2 = false;
-        }
+        //if (Input.GetKey(KeyCode.Space)){
+            //if (isActivated2 == false){
+            //isActivated2 = true;
+        //} else {
+            //isActivated2 = false;
+        //}
     
-        }
+        //}
     
     }
 

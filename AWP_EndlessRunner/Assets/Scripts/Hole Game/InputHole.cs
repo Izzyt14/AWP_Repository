@@ -6,13 +6,13 @@ public class InputHole : MonoBehaviour
 {
     
     Rigidbody2D rb;
-    public bool isActivated1;
+    //public bool isActivated1;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        isActivated1 = true;
+        //isActivated1 = true;
     }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class InputHole : MonoBehaviour
     //}
 
      private void Update() {
-        if (isActivated1 == true){
+        //if (isActivated1 == true){
          if (Input.GetKey(KeyCode.A))
              rb.AddForce(Vector3.left);
          if (Input.GetKey(KeyCode.D))
@@ -33,15 +33,15 @@ public class InputHole : MonoBehaviour
              rb.AddForce(Vector3.down);
         }
  
-        if (Input.GetKey(KeyCode.Space)){
-            if (isActivated1 == false){
-            isActivated1 = true;
-        } else {
-            isActivated1 = false;
-        }
+        //if (Input.GetKey(KeyCode.Space)){
+            //if (isActivated1 == false){
+            //isActivated1 = true;
+        //} else {
+            //isActivated1 = false;
+        //}
 
-        }
-    }
+        //}
+    //}
 
 
 
