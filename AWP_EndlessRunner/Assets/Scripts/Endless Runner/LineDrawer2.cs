@@ -49,8 +49,8 @@ public class LineDrawer2 : MonoBehaviour
         line.positionCount = 2;
         line.startWidth = 0.1f;
         line.endWidth = 0.1f;
-        line.startColor = Color.black;
-        line.endColor = Color.black;
+        line.startColor = Color.red;
+        line.endColor = Color.red;
         line.useWorldSpace = true;    
     }
     // Following method adds collider to created line
