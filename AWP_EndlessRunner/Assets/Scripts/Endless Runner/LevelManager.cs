@@ -18,8 +18,8 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        nextPosition = new Vector3(runner.position.x + 30, -3, 0);
-        
+        nextPosition = new Vector3(runner.position.x + 30, Random.Range(-2, 2), 0);   //new Vector3(runner.position.x + 30, -3, 0);
+
     }
 
     public IEnumerator GroundSpawner(){
