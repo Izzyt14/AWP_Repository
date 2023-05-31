@@ -5,10 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: 760c0d5f0fc67e048a33f3e5ed51f948
+  - enabled: 1
+    path: Assets/Scenes/NewGameScreen.unity
+    guid: 3130358a3cbb93344a82a491bc240143
+  - enabled: 1
+    path: Assets/Scenes/LevelSelectScreen.unity
+    guid: 8c07c0a17b68f1149843d41a728e8ec8
+  - enabled: 1
     path: Assets/Scenes/EndlessRunnerMainGameScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/OptionsScreen.unity
+    guid: 04aad40c07c27bb43bff2263be0d1362
+  - enabled: 1
+    path: Assets/Scenes/CreditsScreen.unity
+    guid: 0d6887729fd4e104fa3de691329687c2
+  - enabled: 0
     path: Assets/Scenes/HoleGameScene.unity
     guid: a16758b3f732576479711a7b199335ca
   m_configObjects: {}
